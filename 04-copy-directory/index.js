@@ -10,7 +10,6 @@ fs.mkdir(path.join(__dirname, 'files-copy'),
         if (err) {
             return console.error(err);
         }
-        console.log('Directory created!');
     }); 
     async function FolderCopied () {
 try {
