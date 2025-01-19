@@ -1,7 +1,7 @@
 const fs = require('fs/promises');
 const path = require('path');
-const copiedPath = './files-copy';
-const currentPath = './files'
+const copiedPath = './04-copy-directory/files-copy';
+const currentPath = './04-copy-directory/files'
 
 
 fs.mkdir(path.join(__dirname, 'files-copy'),

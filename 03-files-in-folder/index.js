@@ -1,6 +1,6 @@
 const fs = require('fs/promises');
 const path = require('path');
-const dirPath = './secret-folder';
+const dirPath = './03-files-in-folder/secret-folder';
 
 async function readFolderFiles (folder) {
     try {
