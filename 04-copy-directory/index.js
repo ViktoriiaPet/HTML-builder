@@ -13,6 +13,10 @@ fs.mkdir(path.join(__dirname, 'files-copy'),
     }); 
     async function FolderCopied () {
 try {
+        await fs.rm(copiedPath, { recursive: true, force: true });
+
+        await fs.mkdir(copiedPath, { recursive: true });
+
         const files = await fs.readdir(currentPath);
         for (const file of files) {
             const fileName = path.basename(file);
