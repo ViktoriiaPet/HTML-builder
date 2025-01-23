@@ -11,10 +11,11 @@ async function readFolderFiles (folder) {
                 const filePath = path.join(folder, fileName);
                 const fileStats = await fs.stat(filePath);
                 const fileExtension = path.extname(fileName)
+                
                 const fileSize = fileStats.size;
                 const NewFileName = path.basename(fileName, fileExtension)
 
-                console.log (`${NewFileName} ${fileExtension} ${fileSize}`);
+                console.log (`${NewFileName} ${fileExtension} ${fileSize}B`);
             }
         }
     } catch (error) {
