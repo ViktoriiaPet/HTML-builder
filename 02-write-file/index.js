@@ -1,6 +1,7 @@
 const fs = require ('fs');
 const readLine = require ('readline');
-const text = 'text.txt';
+const path = require('path');
+const text = path.join(__dirname, './text.txt');
 let isSigint = false;
 
 const userUnput = readLine.createInterface({
